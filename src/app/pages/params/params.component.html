@@ -1,0 +1,41 @@
+<div class="conteudo-param">
+  <form class="param-form" [formGroup]="loginForm" (submit)="submitParams()">
+    <div class="logo">LOGO</div>
+    <div>
+      <div>
+        <input
+          class="input-param"
+          type="number"
+          placeholder="Roletas"
+          formControlName="roletas"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input
+          class="input-param"
+          type="number"
+          placeholder="Valor Máximo"
+          formControlName="Valormax"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input
+          class="input-param"
+          type="number"
+          placeholder="Valor Minimo"
+          formControlName="valorMin"
+        />
+      </div>
+    </div>
+
+    <div>
+      <button class="input-submit" [disabled]="!loginForm.valid">Enviar</button>
+    </div>
+  </form>
+</div>
